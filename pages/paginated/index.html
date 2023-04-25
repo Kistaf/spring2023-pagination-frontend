@@ -1,0 +1,28 @@
+<template>
+  <div class="table-responsive">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+  <div class="d-flex flex-row align-items-center">
+    <ul class="pagination" id="paginator" style="user-select: none">
+      <li class="page-item" style="cursor: pointer">
+        <a class="page-link" id="prev">Previous</a>
+      </li>
+      <li class="page-item"><a class="page-link" style="cursor: pointer" id="next">Next</a></li>
+    </ul>
+    <div class="px-4" id="page_status"></div>
+    <select class="px-4" id="page_size">
+      <option value="10">10</option>
+      <option value="25">25</option>
+      <option value="50">50</option>
+    </select>
+  </div>
+</template>
